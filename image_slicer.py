@@ -2,8 +2,11 @@ from PIL import Image
 import os
 import math
 
+# Edit the two paths below to match your own system, including what you're calling the input.jpg
 export_path = "C:\\py\\image_slicer\\output/"
 image = Image.open("C:/py/image_slicer/input.jpg")
+
+
 imgwidth, imgheight = image.size
 iterations = math.floor(imgwidth / imgheight) + 1
 
